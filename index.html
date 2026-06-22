@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="3ogleh builds premium Jordanian-made calisthenics equipment with a live home gym visualizer and instant pricing."
+    />
+    <title>3ogleh | عقلة - Premium Custom Calisthenics Equipment</title>
+    <link rel="preload" href="assets/hero-gym.png" as="image" />
+    <link rel="preload" href="assets/room-empty.png" as="image" />
+    <link rel="preload" href="assets/product-lineup.png" as="image" />
+    <link rel="stylesheet" href="styles.css?v=4" />
+  </head>
+  <body>
+    <script>try{if(sessionStorage.getItem("threeOglehLoaderShown")){document.documentElement.classList.add("loader-skip")}}catch(e){}</script>
+    <div class="loading-screen" data-loading-screen>
+      <div class="loading-overlay"></div>
+      <div class="loading-content">
+        <img src="assets/logo.png" alt="3ogleh logo" />
+        <span>Powered by Brandak</span>
+        <div class="loading-track"><div data-loading-bar></div></div>
+      </div>
+    </div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="3ogleh home">
+        <img src="assets/logo.png" alt="3ogleh logo" />
+        <span>
+          <strong>3ogleh</strong>
+          <small>عقلة</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" data-nav>
+        <a href="#shop">Equipment</a>
+        <a href="#builder">Builder</a>
+        <a href="/cart">Cart</a>
+        <a href="#reviews">Reviews</a>
+        <a href="/about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Jordanian-made custom calisthenics equipment</p>
+          <h1 id="hero-title">Built To Hold Weight. Built To Outlast Training.</h1>
+          <p>
+            Premium racks, bars, flooring, and accessories designed for serious
+            athletes who want a home gym that looks as strong as it performs.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#builder">Build Your Setup</a>
+            <a class="button button-light" href="/cart">View Cart</a>
+            <a class="button button-ghost" href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-stats" aria-label="Brand highlights">
+          <div>
+            <strong>Custom</strong>
+            <span>Made to your space</span>
+          </div>
+          <div>
+            <strong>Live</strong>
+            <span>Color and pricing preview</span>
+          </div>
+          <div>
+            <strong>JOD</strong>
+            <span>Transparent costs</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-grid" aria-labelledby="why-title">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Premium Design Requirements</p>
+          <h2 id="why-title">Not a standard store. A visual buying experience.</h2>
+          <p>
+            The site is built around motion, strong imagery, clean typography,
+            and the feeling of configuring a premium training setup before
+            requesting installation.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon">01</span>
+            <h3>Tesla-style configurator</h3>
+            <p>Build a room, see every item, change colors, and watch pricing update instantly.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">02</span>
+            <h3>Luxury fitness feel</h3>
+            <p>Large visuals, restrained cards, glass accents, and confident black/orange contrast.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">03</span>
+            <h3>Mobile-first flow</h3>
+            <p>Fast responsive layouts with controls that work cleanly on phone, tablet, and desktop.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shop-section" id="shop" aria-labelledby="shop-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Equipment</p>
+          <h2 id="shop-title">Shop the build system</h2>
+          <p>Filter the full 3ogleh catalog, switch between studio and lifestyle visual styles, then add items directly to the gym builder.</p>
+        </div>
+
+        <div class="catalog-showcase reveal">
+          <img src="assets/product-lineup.png" alt="3ogleh product family lineup on a white studio background" />
+          <div>
+            <span class="panel-kicker">Product Images</span>
+            <h3>Consistent studio visuals for every product category</h3>
+            <p>
+              The current site uses catalog imagery plus matching
+              product-card visuals for pull-up equipment, monkey bars, racks,
+              accessories, weights, and flooring until professional photography
+              is available.
+            </p>
+          </div>
+        </div>
+
+        <div class="filter-bar" role="list" aria-label="Equipment filters">
+          <button class="filter-pill is-active" type="button" data-filter="all">All</button>
+          <button class="filter-pill" type="button" data-filter="bars">Pull Up Bars</button>
+          <button class="filter-pill" type="button" data-filter="racks">Racks</button>
+          <button class="filter-pill" type="button" data-filter="flooring">Flooring</button>
+          <button class="filter-pill" type="button" data-filter="accessories">Accessories</button>
+          <button class="filter-pill" type="button" data-filter="weights">Weights</button>
+        </div>
+
+        <div class="image-mode-toggle" aria-label="Product image style">
+          <span>Product visuals</span>
+          <button class="mode-pill is-active" type="button" data-image-mode="studio">White Studio</button>
+          <button class="mode-pill" type="button" data-image-mode="lifestyle">Gym Lifestyle</button>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="builder-section" id="builder" aria-labelledby="builder-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Realistic 3D Home Gym Designer</p>
+          <h2 id="builder-title">Design Your Home Gym</h2>
+          <p>
+            Enter an empty premium room, move the camera, add equipment,
+            reposition and rotate items, duplicate equipment, change colors
+            live, adjust flooring, and send the setup for quotation.
+          </p>
+        </div>
+
+        <div class="builder-layout">
+          <div class="visualizer-panel reveal">
+            <div class="visualizer-topbar">
+              <div>
+                <span class="panel-kicker">Immersive Room Scene</span>
+                <strong>3D-style garage gym preview</strong>
+              </div>
+              <div class="view-controls" aria-label="Room view controls">
+                <button type="button" class="view-button is-active" data-view="front">Front</button>
+                <button type="button" class="view-button" data-view="left">Left</button>
+                <button type="button" class="view-button" data-view="right">Right</button>
+              </div>
+            </div>
+
+            <div class="camera-controls" aria-label="3D camera controls">
+              <label>
+                Rotate Camera
+                <input id="cameraRotate" type="range" min="-18" max="18" value="0" />
+              </label>
+              <label>
+                Zoom
+                <input id="cameraZoom" type="range" min="92" max="118" value="100" />
+              </label>
+            </div>
+
+            <div class="room-shell" data-view="front" id="roomShell">
+              <img class="room-image" src="assets/room-empty.png" alt="Modern empty garage gym room" />
+              <div class="room-depth-grid" aria-hidden="true"></div>
+              <div class="light-rig" aria-hidden="true"></div>
+              <div class="floor-overlay" id="floorOverlay" aria-hidden="true"></div>
+              <div class="placement-layer" id="placementLayer" aria-label="Placed equipment"></div>
+              <div class="room-empty-state" id="emptyState">
+                <strong>Start with an empty room</strong>
+                <span>Add your first rack, bar, flooring, or accessory.</span>
+              </div>
+            </div>
+
+            <div class="visualizer-actions">
+              <button class="button button-dark" type="button" data-action="reset">Reset room</button>
+              <button class="button button-light" type="button" data-action="save">Save setup</button>
+              <button class="button button-primary" type="button" data-action="share">Copy share link</button>
+            </div>
+          </div>
+
+          <aside class="builder-panel reveal" aria-label="Gym builder controls">
+            <div class="panel-block">
+              <span class="panel-kicker">Add Equipment</span>
+              <div class="equipment-palette" id="equipmentPalette"></div>
+            </div>
+
+            <div class="panel-block active-editor" id="activeEditor">
+              <span class="panel-kicker">Selected Item</span>
+              <div class="editor-empty">Select or add equipment to edit position, rotation, quantity, and color.</div>
+            </div>
+
+            <div class="panel-block">
+              <span class="panel-kicker">Flooring Visualizer</span>
+              <div class="field-grid">
+                <label>
+                  Type
+                  <select id="floorType">
+                    <option value="rubber-tiles">Rubber Tiles - 25 JOD/m²</option>
+                    <option value="foam-interlock">Foam Interlock - 18 JOD/m²</option>
+                    <option value="floor-mats">Floor Mats - 50 JOD</option>
+                  </select>
+                </label>
+                <label>
+                  Area <span id="floorAreaLabel">12 m²</span>
+                  <input id="floorArea" type="range" min="4" max="30" value="12" />
+                </label>
+              </div>
+              <div class="swatch-row" id="floorColors" aria-label="Floor color choices"></div>
+              <button class="button button-light" type="button" data-action="toggle-floor" id="floorToggle">Add flooring to room</button>
+            </div>
+
+            <div class="panel-block pricing-block">
+              <span class="panel-kicker">Real-Time Pricing</span>
+              <div class="summary-list" id="summaryList"></div>
+              <div class="price-total">
+                <span>Total Cost</span>
+                <strong id="totalCost">0 JOD</strong>
+              </div>
+              <div class="quote-actions">
+                <button class="button button-primary" type="button" data-action="view-cart">View Cart</button>
+                <button class="button button-light" type="button" data-action="open-checkout">Checkout</button>
+                <button class="button button-light" type="button" data-action="whatsapp">WhatsApp Support</button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section process-section" aria-labelledby="process-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Checkout Flow</p>
+          <h2 id="process-title">From visual setup to installation request</h2>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span>01</span>
+            <h3>Build</h3>
+            <p>Choose a base setup, add accessories, flooring, and weights.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>02</span>
+            <h3>Review</h3>
+            <p>See product quantity, color, individual price, subtotal, and final total.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>03</span>
+            <h3>Pay</h3>
+            <p>Use CliQ after checkout and include your order code in the transfer note.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>04</span>
+            <h3>Confirm</h3>
+            <p>Receive an order code and confirmation details for your installation request.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reviews-section" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Customer Feedback</p>
+          <h2 id="reviews-title">What Customers Say</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card reveal" lang="ar" dir="rtl">
+            <div class="review-avatar" aria-hidden="true">RA</div>
+            <p>دقة بفهم اللوازم للعدة، ودقة بتصنيع الشكل المطلوب بالملي متر. المواد المستعملة للتصنيع ممتازة من ناحية الملمس والتحمل، والسعر منافس جداً، ووصلتني أسرع مما كنت متوقع.</p>
+          </article>
+          <article class="review-card reveal" lang="ar" dir="rtl">
+            <div class="review-avatar" aria-hidden="true">MK</div>
+            <p>يعطيكم العافية، شغل مرتب من ناحية الجودة والمقاسات.</p>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-avatar" aria-hidden="true">YS</div>
+            <p>So perfect!!! Thank you and professionally installed!</p>
+          </article>
+          <article class="review-card reveal" lang="ar" dir="rtl">
+            <div class="review-avatar" aria-hidden="true">LA</div>
+            <p>سلام كيفك، هلا ركبناها وممتازة، شكراً.</p>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-avatar" aria-hidden="true">NH</div>
+            <p>hey - so far so good! thanks!</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-card reveal">
+          <span class="panel-kicker">Contact</span>
+          <h2 id="contact-title">Ready to build your setup?</h2>
+          <p>Phone: <strong data-owner-phone>0798125254</strong></p>
+          <p>WhatsApp: <strong data-owner-whatsapp>0798125254</strong></p>
+          <p>CliQ: <strong>0798125254</strong></p>
+          <p>Email: <a href="mailto:3ogleh.jo@gmail.com">3ogleh.jo@gmail.com</a></p>
+          <div class="contact-actions">
+            <a class="button button-dark" href="tel:0798125254">Call Now</a>
+            <a class="button button-primary" data-whatsapp-link href="https://wa.me/962798125254" target="_blank" rel="noreferrer">WhatsApp Us</a>
+            <a class="button button-light" href="mailto:3ogleh.jo@gmail.com">Email</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer" aria-label="Footer contact section">
+      <div>
+        <img src="assets/logo.png" alt="3ogleh logo" />
+        <strong>3ogleh | عقلة</strong>
+        <span>Premium Jordanian-made calisthenics equipment.</span>
+      </div>
+      <nav>
+        <a href="tel:0798125254">Call 0798125254</a>
+        <a data-whatsapp-link href="https://wa.me/962798125254" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a href="mailto:3ogleh.jo@gmail.com">3ogleh.jo@gmail.com</a>
+        <span>CliQ: 0798125254</span>
+      </nav>
+    </footer>
+
+    <a class="floating-whatsapp" data-whatsapp-link href="https://wa.me/962798125254" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3.2A12.74 12.74 0 0 0 5.18 22.6L3.8 28.8l6.34-1.32A12.78 12.78 0 1 0 16.04 3.2Zm0 2.28a10.5 10.5 0 0 1 8.91 16.05 10.45 10.45 0 0 1-13.98 3.73l-.45-.25-3.78.79.82-3.65-.29-.48A10.48 10.48 0 0 1 16.04 5.48Zm-5.1 5.55c-.24.53-.91 1.17-.91 2.22 0 1.05.94 3.04 2.2 4.45 1.5 1.69 3.7 3.02 5.72 3.7 1.51.51 2.26.44 3.05.28.94-.19 1.93-1.08 2.2-2.13.27-1.04.27-1.93.19-2.13-.08-.19-.29-.31-.61-.47l-2.13-1.04c-.32-.16-.55-.24-.78.08-.24.31-.9 1.04-1.1 1.25-.2.21-.41.24-.74.08-.32-.16-1.36-.5-2.6-1.6-.96-.86-1.61-1.92-1.8-2.24-.19-.32-.02-.5.14-.66.15-.14.32-.37.48-.55.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56l-.96-2.29c-.25-.61-.51-.53-.7-.54h-.6c-.21 0-.55.08-.84.4Z" fill="currentColor"/></svg>
+    </a>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="/config.js"></script>
+    <script src="shop-data.js"></script>
+    <script src="loading.js"></script>
+    <script src="app.js?v=4"></script>
+  </body>
+</html>
